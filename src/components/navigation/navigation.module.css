@@ -1,0 +1,24 @@
+
+nav> ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    list-style-type: none;
+    padding: 25px;
+
+
+}
+
+nav>ul>li{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+}
+
+.links{
+    
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
