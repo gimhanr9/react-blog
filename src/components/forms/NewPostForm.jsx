@@ -13,7 +13,8 @@ function NewPostForm(props){
         const enteredTitle=titleRef.current.value;
         const enteredDescription=descriptionRef.current.value;
 
-        const postObj={id:enteredId,title:enteredTitle,body:enteredDescription};
+        const postObj={userId:enteredId,title:enteredTitle,body:enteredDescription};
+        props.onSubmit(postObj);
 
     }
     return(
@@ -26,7 +27,7 @@ function NewPostForm(props){
             </div>
 
             <div className={classes.control}>
-                <label htmlFor="title">Meetup Title</label>
+                <label htmlFor="title">Blog Title</label>
                 <input type="text" required id="title" ref={titleRef}/>
             </div>
 
